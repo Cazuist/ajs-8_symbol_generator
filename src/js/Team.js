@@ -9,10 +9,10 @@ export default class Team {
     ]);
   }
 
-  *[Symbol.iterator]() {
-    let charList = Array.from(this.members);
-    
-    for (let char of charList) {
+  * [Symbol.iterator]() {
+    const charList = Array.from(this.members);
+
+    for (const char of charList) {
       yield char;
     }
   }
